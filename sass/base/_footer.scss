@@ -1,0 +1,127 @@
+.footer {
+    background-color: #2f303a;
+    display: flex;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.footer-mail,
+.footer-phone,
+.footer-address {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address {
+    color: #ffffff;
+}
+
+.footer-mail:hover,
+.footer-phone:hover,
+.footer-address:hover,
+.footer-mail:focus,
+.footer-phone:focus,
+.footer-address:focus {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-section {
+    display: flex;
+}
+
+.social {
+    margin-left: 70px;
+}
+
+.social-title,
+.conect-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.social .team-icon {
+    fill: #ffffff;
+}
+
+.team-link {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-conect {
+    margin-left: 92px;
+}
+
+.footer-mailing {
+    display: flex;
+}
+
+.conect-field {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.button-mailing {
+    display: flex;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.button-mailing:hover,
+.button-mailing:focus,
+.send-button:hover,
+.send-button:focus {
+    background: #188ce8;
+}
+
+.mailing-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: tomato;
+}
+
+.conect-field {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgb(255, 255, 255);
+}
+
+.conect-field::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
