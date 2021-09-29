@@ -18,7 +18,7 @@
     background: #c4c4c4;
 }
 
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -26,26 +26,4 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 45px;
-}
-
-.hero-button,
-.send-button,
-.button-mailing {
-    max-height: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    background-color: var(--accent-text-color);
-    padding: 10px 32px;
-    border-radius: 4px;
-    min-width: 200px;
-    border: none;
-}
-
-.hero-button:focus,
-.hero-button:hover {
-    color: var(--accent-text-color);
-    background-color: #ffffff;
 }

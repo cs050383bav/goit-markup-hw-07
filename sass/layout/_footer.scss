@@ -5,32 +5,23 @@
     padding: 60px 0px;
 }
 
-.footer-mail,
-.footer-phone,
-.footer-address {
+.footer-adres__mail,
+.footer-adres__phone,
+.footer-adres__place {
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
 }
 
-.footer-address {
+.footer-adres__place {
     color: #ffffff;
-}
-
-.footer-mail:hover,
-.footer-phone:hover,
-.footer-address:hover,
-.footer-mail:focus,
-.footer-phone:focus,
-.footer-address:focus {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--accent-text-color);
 }
 
 .footer-logo {
@@ -38,20 +29,24 @@
     display: block;
 }
 
-.footer-item:not(:last-child) {
-    margin-bottom: 9px;
+.footer-adres__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
-
-.footer-section {
+.footer__section {
     display: flex;
 }
 
-.social {
+.footer-social {
     margin-left: 70px;
+    & .team-icon {
+        fill: #ffffff;
+    }
 }
 
-.social-title,
-.conect-title {
+.footer-social__title,
+.footer-conect__title {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -61,23 +56,15 @@
     margin-bottom: 20px;
 }
 
-.social .team-icon {
-    fill: #ffffff;
-}
-
-.team-link {
-    background: rgba(255, 255, 255, 0.1);
-}
-
 .footer-conect {
     margin-left: 92px;
 }
 
-.footer-mailing {
+.footer-conect__mailing {
     display: flex;
 }
 
-.conect-field {
+.footer-conect__field {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     width: 358px;
@@ -91,37 +78,29 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.button-mailing {
+.footer__button {
     display: flex;
     margin-left: 12px;
     align-items: center;
 }
 
-.button-mailing:hover,
-.button-mailing:focus,
-.send-button:hover,
-.send-button:focus {
-    background: #188ce8;
-}
-
-.mailing-icon {
+.foorer-mailing__icon {
     width: 24px;
     height: 24px;
     margin-left: 10px;
     fill: tomato;
 }
 
-.conect-field {
+.footer-conect__field {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
     color: rgb(255, 255, 255);
-}
-
-.conect-field::placeholder {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }

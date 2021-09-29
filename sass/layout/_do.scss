@@ -2,7 +2,7 @@
     padding-top: 0;
 }
 
-.do-title {
+.do__title {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
@@ -12,16 +12,16 @@
     margin-bottom: 50px;
 }
 
-.do-list {
+.do__list {
     display: flex;
     justify-content: space-between;
 }
 
-.do-item {
+.do__item {
     position: relative;
 }
 
-.do-offer {
+.do__offer {
     position: absolute;
     bottom: 0;
     left: 0;

@@ -17,25 +17,23 @@
     background: #f5f4fa;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.02);
-}
-
-.work-button:hover,
-.work-button:focus {
-    color: #ffffff;
-    background-color: var(--accent-text-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        background-color: var(--accent-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
 }
 
 .works-filters {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-.works-filter:not(:last-child) {
-    margin-right: 8px;
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
 }
 
 .works-project {
@@ -63,26 +61,25 @@
 .works-item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
-}
-
-.works-item:hover,
-.works-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.works-item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.works-item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
-}
-
-.work-img {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 30px;
+    }
+    & .work-img {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+    &:hover .work-img::after {
+        transform: translateY(0);
+    }
 }
 
 .work-img::after {
@@ -104,10 +101,6 @@
 
     transform: translateY(100%);
     transition: transform 250ms;
-}
-
-.works-item:hover .work-img::after {
-    transform: translateY(0);
 }
 
 .work-signature {
